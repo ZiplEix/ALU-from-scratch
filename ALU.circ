@@ -39,9 +39,7 @@
     <tool lib="8" name="Wiring Tool"/>
     <tool lib="8" name="Text Tool"/>
     <sep/>
-    <tool lib="0" name="Pin">
-      <a name="facing" val="west"/>
-    </tool>
+    <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -100,5 +98,66 @@
     <wire from="(160,200)" to="(200,200)"/>
     <wire from="(250,140)" to="(310,140)"/>
     <wire from="(250,220)" to="(310,220)"/>
+  </circuit>
+  <circuit name="full_adder">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="full_adder"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(120,100)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(120,140)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(120,180)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CIN"/>
+    </comp>
+    <comp lib="0" loc="(380,140)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="SUM"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(380,210)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="COUT"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(220,220)" name="AND Gate"/>
+    <comp lib="1" loc="(230,120)" name="XOR Gate"/>
+    <comp lib="1" loc="(310,210)" name="AND Gate"/>
+    <comp lib="1" loc="(330,140)" name="XOR Gate"/>
+    <comp lib="1" loc="(370,280)" name="OR Gate"/>
+    <wire from="(120,100)" to="(150,100)"/>
+    <wire from="(120,140)" to="(140,140)"/>
+    <wire from="(120,180)" to="(230,180)"/>
+    <wire from="(140,140)" to="(140,240)"/>
+    <wire from="(140,140)" to="(170,140)"/>
+    <wire from="(140,240)" to="(170,240)"/>
+    <wire from="(150,100)" to="(150,200)"/>
+    <wire from="(150,100)" to="(170,100)"/>
+    <wire from="(150,200)" to="(170,200)"/>
+    <wire from="(220,220)" to="(230,220)"/>
+    <wire from="(230,120)" to="(250,120)"/>
+    <wire from="(230,160)" to="(230,180)"/>
+    <wire from="(230,160)" to="(240,160)"/>
+    <wire from="(230,220)" to="(230,300)"/>
+    <wire from="(230,300)" to="(320,300)"/>
+    <wire from="(240,160)" to="(240,230)"/>
+    <wire from="(240,160)" to="(270,160)"/>
+    <wire from="(240,230)" to="(260,230)"/>
+    <wire from="(250,120)" to="(250,190)"/>
+    <wire from="(250,120)" to="(270,120)"/>
+    <wire from="(250,190)" to="(260,190)"/>
+    <wire from="(310,210)" to="(310,260)"/>
+    <wire from="(310,260)" to="(320,260)"/>
+    <wire from="(330,140)" to="(380,140)"/>
+    <wire from="(370,280)" to="(380,280)"/>
+    <wire from="(380,210)" to="(380,280)"/>
   </circuit>
 </project>
