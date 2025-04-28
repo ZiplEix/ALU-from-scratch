@@ -80,11 +80,13 @@
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="SUM"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(310,220)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="CARRY"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="1" loc="(250,140)" name="XOR Gate"/>
     <comp lib="1" loc="(250,220)" name="AND Gate"/>
